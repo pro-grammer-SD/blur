@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "blur"
+dynamic = ["version"]
+description = "A wrapper for Tekno's blur in Python 🔥"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Soumalya Das", email = "geniussantu1983@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/Soumalya Das/blur#readme"
+Issues = "https://github.com/Soumalya Das/blur/issues"
+Source = "https://github.com/Soumalya Das/blur"
+
+[tool.hatch.version]
+path = "src/blur/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/blur tests}"
+
+[tool.coverage.run]
+source_pkgs = ["blur", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/blur/__about__.py",
+]
+
+[tool.coverage.paths]
+blur = ["src/blur", "*/blur/src/blur"]
+tests = ["tests", "*/blur/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
