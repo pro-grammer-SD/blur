@@ -26,6 +26,8 @@
 pip install blurpy
 ```
 
+Extract binaries and move them to root, ENJOY!!!
+
 ## License
 
 `blurpy` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

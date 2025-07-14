@@ -4,8 +4,8 @@ import time
 
 SCRIPT_DIR = os.path.dirname(__file__)
 INPUT = os.path.join(SCRIPT_DIR, 'samples', 'video.mp4')
-CONFIG = os.path.join(SCRIPT_DIR, 'config', 'blur-config.cfg')
-EXE = os.path.abspath(os.path.join(SCRIPT_DIR, 'bin', 'blur.exe'))
+CONFIG = 'config/blur-config.cfg'
+EXE = 'bin/blur.exe'
 
 def blur(input: str = INPUT, output: str = "output.mp4", config_loc: str = CONFIG):
     start = time.perf_counter()
