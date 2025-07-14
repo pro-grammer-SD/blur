@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "blur"
+name = "blurpy"
 dynamic = ["version"]
 description = "A wrapper for Tekno's blur in Python 🔥"
 readme = "README.md"
