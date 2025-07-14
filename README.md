@@ -28,6 +28,16 @@ pip install blurpy
 
 Extract binaries and move them to root, ENJOY!!!
 
+## Quickstart
+
+```
+from blurpy.blur import blur
+
+blur(input_: str, output: str = "output.mp4",config_loc: str)
+```
+
+Fill in these as per as your own wish!
+
 ## License
 
 `blurpy` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
