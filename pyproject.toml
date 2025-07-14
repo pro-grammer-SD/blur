@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "blurpy"
 dynamic = ["version"]
-description = "A wrapper for Tekno's blur in Python 🔥"
+description = "A wrapper of Tekno's blur in Python 📦"
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
@@ -27,31 +27,31 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/Soumalya Das/blur#readme"
-Issues = "https://github.com/Soumalya Das/blur/issues"
-Source = "https://github.com/Soumalya Das/blur"
+Documentation = "https://github.com/Soumalya Das/blurpy#readme"
+Issues = "https://github.com/Soumalya Das/blurpy/issues"
+Source = "https://github.com/Soumalya Das/blurpy"
 
 [tool.hatch.version]
-path = "src/blur/__about__.py"
+path = "src/blurpy/__about__.py"
 
 [tool.hatch.envs.types]
 extra-dependencies = [
   "mypy>=1.0.0",
 ]
 [tool.hatch.envs.types.scripts]
-check = "mypy --install-types --non-interactive {args:src/blur tests}"
+check = "mypy --install-types --non-interactive {args:src/blurpy tests}"
 
 [tool.coverage.run]
-source_pkgs = ["blur", "tests"]
+source_pkgs = ["blurpy", "tests"]
 branch = true
 parallel = true
 omit = [
-  "src/blur/__about__.py",
+  "src/blurpy/__about__.py",
 ]
 
 [tool.coverage.paths]
-blur = ["src/blur", "*/blur/src/blur"]
-tests = ["tests", "*/blur/tests"]
+blurpy = ["src/blurpy", "*/blurpy/src/blurpy"]
+tests = ["tests", "*/blurpy/tests"]
 
 [tool.coverage.report]
 exclude_lines = [
