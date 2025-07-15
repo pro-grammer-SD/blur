@@ -2,8 +2,8 @@ import os
 import subprocess
 import time
 
-CONFIG = 'config/blur-config.cfg'
-EXE = 'bin/blur.exe'
+CONFIG = 'blur-bins/config/blur-config.cfg'
+EXE = 'blur-bins/bin/blur.exe'
 
 def blur(input_: str, output: str = "output.mp4", config_loc: str = CONFIG):
     start = time.perf_counter()
