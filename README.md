@@ -21,7 +21,8 @@
 - **FFmpeg**
 - **VapourSynth**
 - **Git (for cloning)**
-- **Binaries**: ```
+- **Binaries**: 
+```
 from blurpy.deps import get_deps
 
 get_deps() # so easy!
