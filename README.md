@@ -6,6 +6,7 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/blurpy.svg)](https://pypi.org/project/blurpy)
 ![FFmpeg Support](https://img.shields.io/badge/FFmpeg-required-blue?logo=ffmpeg)
 ![VapourSynth](https://img.shields.io/badge/VapourSynth-%F0%9F%A7%AA_required-purple?style=flat-square&logoColor=white&color=purple)
+![Git](https://img.shields.io/badge/Git-required-orange?logo=git)
 
 -----
 
@@ -19,7 +20,12 @@
 
 - **FFmpeg**
 - **VapourSynth**
-- **Binaries**: Get them at https://drive.google.com/file/d/1ish5yWMUsQNZ68SFuKtDrQgrcIOVyy5T/view?usp=sharing
+- **Git (for cloning)**
+- **Binaries**: ```
+from blurpy.deps import get_deps
+
+get_deps() # so easy!
+```
 
 ## Installation
 
