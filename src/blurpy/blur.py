@@ -7,6 +7,8 @@ EXE = 'blur-bins/bin/blur.exe'
 
 def blur(input_: str, output: str = "output.mp4", config_loc: str = CONFIG):
     start = time.perf_counter()
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(current_dir)
     subprocess.run([EXE, "-i", input_, "-o", output, "-c", config_loc, "-v"])
     end = time.perf_counter()
     
