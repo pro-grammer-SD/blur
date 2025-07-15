@@ -2,7 +2,6 @@ import os
 import subprocess
 import time
 
-SCRIPT_DIR = os.path.dirname(__file__)
 CONFIG = 'config/blur-config.cfg'
 EXE = 'bin/blur.exe'
 
