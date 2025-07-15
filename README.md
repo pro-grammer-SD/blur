@@ -1,6 +1,6 @@
 # blurpy
 
-![](../icon/icon.png)
+![](icon/icon.png)
 
 [![PyPI - Version](https://img.shields.io/pypi/v/blurpy.svg)](https://pypi.org/project/blurpy)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/blurpy.svg)](https://pypi.org/project/blurpy)
