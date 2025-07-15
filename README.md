@@ -19,6 +19,7 @@
 
 - **FFmpeg**
 - **VapourSynth**
+- **Binaries**: Get them at https://drive.google.com/file/d/1ish5yWMUsQNZ68SFuKtDrQgrcIOVyy5T/view?usp=sharing
 
 ## Installation
 
@@ -33,7 +34,7 @@ Extract binaries and move them to root, ENJOY!!!
 ```
 from blurpy.blur import blur
 
-blur(input_: str, output: str = "output.mp4",config_loc: str)
+blur(input_: str, output: str = "output.mp4", config_loc: str)
 ```
 
 Fill in these as per as your own wish!

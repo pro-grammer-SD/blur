@@ -28,9 +28,9 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/Soumalya Das/blur#readme"
-Issues = "https://github.com/Soumalya Das/blur/issues"
-Source = "https://github.com/Soumalya Das/blur"
+Documentation = "https://github.com/pro-grammer-sd/blur#readme"
+Issues = "https://github.com/pro-grammer-sd/blur/issues"
+Source = "https://github.com/pro-grammer-sd/blur"
 
 [tool.hatch.version]
 path = "src/blurpy/__about__.py"
